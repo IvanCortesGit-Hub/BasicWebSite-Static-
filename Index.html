@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!--Ponemos los metadatos como tittle, description, keywords, viewport y todo eso para que el motor de busqueda lo interprete-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Web Portfolio">
+    <meta name="author" content="Ivan Cortes">
+    <meta name="description" content="A web portfolio showcasing my projects to company recruiters. If they like what they see, they can contact me">
+    <meta name="keywords" content="PROJECT,HTML,CSS,PYTHON,JAVASCRIPT,GIT,GITHUB,REACT,DJANGO,CV">
     <title>Mi primera pagina web</title>
+    <link rel="icon" href="Imagines e Iconos/search_find_window_16723.png">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Ivan Santiago Cortes Gutierrez</h1>
-    <h2>Perfil Profesional</h2>
-    <p>Estudiante de ultimo semestre de Ingenieria de Sistemas, desarrollador full-stack junior enfocado en back-end<br>
+    <header>
+        <h2>Resumen academico profesional</h2>
+            <ul>
+                <li>Hoja de vida</li>
+                <li>Reconocimientos academicos</li>
+                <li>Proyectos creados</li>
+            </ul>
+    </header>
+    <header id="inicio"> <!--RESUMEN EN GENERAL-->
+        <h2>Perfil Profesional</h2>
+        <p>Estudiante de ultimo semestre de Ingenieria de Sistemas, desarrollador full-stack junior enfocado en back-end<br>
         He sido parte de proyectos enfocados en la creacion de plataformas moviles y web utilizando tecnologias como:<br><br>
         GIT, JAVASCRIPT, REACT, PYTHON, DJANGO, MySQL, POSTGREDB
-    </p>
+        </p>
+        <img src="Imagines e Iconos/Facultad.jpeg"/>
+    </header>
     <hr>
-    <!-- Pasamos al entorno de los portafolios-->
-     <img src="Facultad.jpeg"/>
-     <h2>HISTORIA ACADEMICA</h2><br>
-     <h3>Mi Universidad</h3>
-     <p>Proximo graduado de la facultad de Ingenieria de la universidad Libre de Colombia, sede Bogota<br>
+    <header><!--VIDA ACADEMICA-->
+        <h2>HISTORIA ACADEMICA</h2><br>
+        <h3>Mi Universidad</h3>
+        <p>Proximo graduado de la facultad de Ingenieria de la universidad Libre de Colombia, sede Bogota<br>
         Aca tuve la oportunidad de crecer profesionalmente como personalmente, ademas de crear vinvulos interculturales
-     </p>
-     <a target="_blank" href="https://www.unilibre.edu.co/">PAGINA WEB DE MI ALAMA MATER</a> <br> <br>
-     <img width="400" height="500" src="https://comunicacionesbogota.unilibre.edu.co/wp-content/uploads/2019/02/sede-bosque-10.jpg"/>
-     <h2>RECONOCIMIENTOS ACADEMICOS EN MI VIDA ACADEMICA</h2>
-     <ul>
-        <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER 11</li>
-        <li>RECONOCIMIENTO MERITO ACADEMICO UNIVERSIDAD LIBRE</li>
-        <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER PRO</li>
-     </ul>
-     <br>
-     <h3>ESTUDIOS INTERNACIONALES</h3>
-     <br>
-     <p>Realice estudios de 2 materias de programcion (movil y web) en la Universidad Tecnica Particular de Loja, en Ecuador<br>
+        </p>
+        <a target="_blank" href="https://www.unilibre.edu.co/">PAGINA WEB DE MI ALAMA MATER</a> <br> <br>
+        <img width="400" height="500" src="https://comunicacionesbogota.unilibre.edu.co/wp-content/uploads/2019/02/sede-bosque-10.jpg"/>
+    </header>
+    <hr>
+    <header> <!--RECONOCIMIENTOS ACADEMICOS-->
+        <h2>RECONOCIMIENTOS ACADEMICOS EN MI VIDA ACADEMICA</h2>
+        <ul>
+            <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER 11</li>
+            <li>RECONOCIMIENTO MERITO ACADEMICO UNIVERSIDAD LIBRE</li>
+            <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER PRO</li>
+        </ul>
+        <br>
+    </header>
+    <header> <!--ESTUDIOS REALIZADOS EN EL EXTRANJERO-->
+        <h3>ESTUDIOS INTERNACIONALES</h3>
+        <br>
+        <p>Realice estudios de 2 materias de programcion (movil y web) en la Universidad Tecnica Particular de Loja, en Ecuador<br>
         Esto me permitio fortalecer mis estudios academicos, profesionales y sociales a niveles internacionales, ademas de un aprendizaje continuo y mayormente autonomo <br>
         Es por esto, que aprobe estas 2 materias academicas en esta prestigiosa universidad:
-    </p>
-    <ol>
-        <li>PROGRAMACION MOVIL
-            <ol>
-                <li style="list-style-type: decimal-leading-one;">Teoria programacion de aplicaciones</li>
-                <li style="list-style-type: decimal-leading-one;">Bases de datos en los programas nativos o hibridos</li>
-                <li style="list-style-type: decimal-leading-one;">php con Flutter</li>
-                <li style="list-style-type: decimal-leading-one;">python con Django</li>
-            </ol>
-        </li>
-        <li>PROGRAMACION WEB
-            <ul>
-                <li style="list-style-type: upper-roman;">Teoria de las paginas web</li>
-                <li style="list-style-type: upper-roman;">Estructura de una pagina web</li>
-                <li style="list-style-type: upper-roman;">HTML y CSS</li>
-                <li style="list-style-type: upper-roman;">JAVASCRIPT y JQuery</li>
-            </ul>
-        </li>
-
-    </ol>
-
-
-
-
-
-
-     <form action="/formulario" method="POST"> 
-        <label for="Nombre">Nombre</label>
-        <input type="text"  id = "Nombre" name="Nombre" placeholder="Digita tu nombre aca"/>
-        <label for="Apellido">Apellido</label>
-        <input type="text"  id = "Apellido" name="Apellido" placeholder="Digita tu apellido aca"/><br> <br>
-        <textarea name="Comentario" cols="55" rows="10" id="Comentario" placeholder="Deja tu comentario aca"></textarea><br>
-        <label>Guardar cambios   </label><input type="submit"></input>
-     </form>
-
-
-    
+        </p>
+        <ol>
+            <li>PROGRAMACION MOVIL
+                <ol>
+                    <li style="list-style-type: decimal-leading-one;">Teoria programacion de aplicaciones</li>
+                    <li style="list-style-type: decimal-leading-one;">Bases de datos en los programas nativos o hibridos</li>
+                    <li style="list-style-type: decimal-leading-one;">php con Flutter</li>
+                    <li style="list-style-type: decimal-leading-one;">python con Django</li>
+                </ol>
+            </li>
+            <li>PROGRAMACION WEB
+                <ul>
+                    <li style="list-style-type: upper-roman;">Teoria de las paginas web</li>
+                    <li style="list-style-type: upper-roman;">Estructura de una pagina web</li>
+                    <li style="list-style-type: upper-roman;">HTML y CSS</li>
+                    <li style="list-style-type: upper-roman;">JAVASCRIPT y JQuery</li>
+                </ul>
+            </li>
+        </ol>
+    </header>
+    <div> <!--PARTE INDEPENDIENTE DONDE MUESTRO NOTAS DEL ULTIMO SEMESTRE-->
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>Materia</Th>
+                    <th>Nota final</th>
+                    <th>Fallas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>4.1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Inteligencia Artificial</td>
+                    <td>4.9</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Ingenieria aplicada</td>
+                    <td>3.8</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Sistemas Integrados de Gestion</td>
+                    <td>3.4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gerencia Estrategica</td>
+                    <td>4.5</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>NOTA DEFINITIVA SEMESTRE</td>
+                <td>4.12</td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <footer>  
+        <a href="#inicio">Regresar a inicio de pagina</a>
+        <form action="/formulario" method="POST"> 
+            <label for="Nombre">Nombre</label>
+            <input type="text"  id = "Nombre" name="Nombre" placeholder="Digita tu nombre aca"/>
+            <label for="Apellido">Apellido</label>
+            <input type="text"  id = "Apellido" name="Apellido" placeholder="Digita tu apellido aca"/><br> <br>
+            <textarea name="Comentario" cols="55" rows="10" id="Comentario" placeholder="Deja tu comentario aca"></textarea><br>
+            <label>Guardar cambios   </label><input type="submit"></input>
+        </form>
+    </footer>
 </body>
 </html>
