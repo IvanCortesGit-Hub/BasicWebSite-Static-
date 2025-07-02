@@ -1,0 +1,105 @@
+/*SE CREAN LOS ESTILOS AL DOCUMENTO*/
+body{
+    background-color: rgb(107, 107, 107);
+}
+h1{
+    background-color: black;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20% 20% 25% 20%;
+    border: 0.6rem solid white;
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+#subtitulo_principal{
+    color: rgb(255, 202, 136);
+}
+
+h2, h4{
+    color: #dda06e;
+}
+
+p{
+    color: azure;
+}
+
+#menu_navegacion{
+    color: rgb(255, 202, 136);
+}
+
+.navegacion{
+    color: rgb(255, 255, 255);
+}
+
+ul li::marker {
+  color: rgb(255, 202, 136); 
+}
+
+ol li::marker{
+    color:rgb(255, 202, 136) ;
+}
+
+article h2{
+    color: rgb(59, 84, 228);
+}
+
+p.texto_primer_proyecto{
+    color: hsl(243, 68%, 80%);
+}
+
+a:link{ /*Poner color a los links*/
+    color: rgb(203, 178, 67);
+}
+
+a:visited{ /*Cuando ya se visito el link*/
+    color: rgb(46, 46, 112);
+}
+a:hover{ /*Cuando el mouse esta sobre el link sin dar click*/
+    color: burlywood;
+}
+a:active{ /*Cuando se hace click al link*/
+    color: rgb(255, 255, 255);
+}
+
+.sobre_mi{
+    background-color: black;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    
+    border: 0.6rem solid white;
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+nav{
+    background-color: black;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    border: 0.6rem solid white;
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+/* PRACTICAR:
+    6- LAS TABLAS (ademas de tr: nth-child(even){}
+    7- CENTRAR UN DIV O LO QUE SEA
+*/
+
+/* COMANDOS A PRACTICAR:
+
+    1- BACKGROUND-COLOR:
+    2- OPACITY:
+    3- BACKGROUND-IMAGE:url();
+    4- BACKGROUND-SIZE:cover;
+    5- OVERFLOW: hidden,visible,scroll;
+    6- TEXT-ALIGN: Center,left,right;
+    7- TEXT-DECORATION: underline,overline,linetrough
+    8- TEXT-SHADOW:-px -px -px;
+    9- FONT-FAMILY: ---;
+    10- LIST-STYLE-TYPE: --;
+    11- LIST-STYLR-POSITION: --;
+    12- CURSOR: POINTER;
+    13- DISPLAY: block, inline;
+    14- VISIBILITY: hidden;
+    15- MAX-WIDTH: -px;
+    16- FLOAT: right, left; 
+    17- POSITION: fixed, sticky;
+/*
