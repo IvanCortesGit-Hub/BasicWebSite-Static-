@@ -1,26 +1,48 @@
 /*SE CREAN LOS ESTILOS AL DOCUMENTO*/
 body{
-    background-color: rgb(107, 107, 107);
+    background: linear-gradient(black, rgb(151, 87, 28));
 }
-h1{
+
+
+.Portada{
     background-color: black;
     color: rgb(238, 238, 238);
     text-align: center;
     padding: 20% 20% 25% 20%;
     border: 0.6rem solid white;
     margin: 1rem 1rem 5rem 1rem;
+    background-image: url(https://www.master-data-scientist.com/wp-content/uploads/2018/06/lenguajes-programacion-data-science-653x359.jpg);
+    background-size: cover;
+    box-shadow: 0em 1em 2em 1em rgb(255, 178, 11);
+    
 }
 
-#subtitulo_principal{
-    color: rgb(255, 202, 136);
+.subtitulos_navegacion{
+    color: #dda06e; 
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
-
-h2, h4{
+.subtitulos{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    text-shadow: -1px 1px 0.5px;
+    font-family: 'Times New Roman', Times, serif;
     color: #dda06e;
+    visibility: visible;
 }
+
+.tabla{
+  margin: 3rem auto;
+  box-shadow: 0 0 7em black;
+  position: relative;
+}
+
 
 p{
     color: azure;
+    opacity: 0.8;
 }
 
 #menu_navegacion{
@@ -29,14 +51,16 @@ p{
 
 .navegacion{
     color: rgb(255, 255, 255);
+    list-style-type: upper-roman;
+    list-style-position: inside;
 }
 
 ul li::marker {
-  color: rgb(255, 202, 136); 
+  color: rgb(255, 255, 255); 
 }
 
 ol li::marker{
-    color:rgb(255, 202, 136) ;
+    color:rgb(255, 255, 255) ;
 }
 
 article h2{
@@ -52,7 +76,7 @@ a:link{ /*Poner color a los links*/
 }
 
 a:visited{ /*Cuando ya se visito el link*/
-    color: rgb(46, 46, 112);
+    color: rgb(210, 145, 48);
 }
 a:hover{ /*Cuando el mouse esta sobre el link sin dar click*/
     color: burlywood;
@@ -61,11 +85,20 @@ a:active{ /*Cuando se hace click al link*/
     color: rgb(255, 255, 255);
 }
 
-.sobre_mi{
+.paginas_externas{
+    text-align: left;
+}
+
+#video{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 7px whitesmoke;
+}
+
+.posts{
     background-color: black;
     color: rgb(238, 238, 238);
     text-align: center;
-    
     border: 0.6rem solid white;
     margin: 1rem 1rem 5rem 1rem;
 }
@@ -78,7 +111,129 @@ nav{
     margin: 1rem 1rem 5rem 1rem;
 }
 
+table{
+    height: 30rem;
+    width: 90rem;
+    padding: 1rem;
+    border: 5px solid white;
+    margin: 2% 3% 2% 7%;
+    max-width: 90rem;
+}
+th{
+    padding: 1rem;
+    background-color: #dda06e;
+    border: 2px solid white;
+    text-align: center;
+}
+td{
+    background-color: rgb(80, 80, 80);
+    border: 2px solid white;
+    text-align: center;
+}
+
+tr:nth-child(even) td{
+    background-color: rgb(255, 210, 106);
+}
+
+tr:hover td{
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.prueba{
+    text-align: left;
+}
+
+#comentario_empresa{
+    overflow: visible;
+}
+
+.contacto{
+    background-color: black;
+    color: rgb(238, 238, 238);
+    padding-left: 4%;   
+    width: 90%;
+    border: 0.6rem solid white;
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+.FaQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+  margin: 3rem 3rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px black;
+}
+
+#Texto_selector{
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#texto_idlist{
+    font-weight: bold;
+}
+
+.mover{
+    margin-right: 50%;
+}
+
+.moversegundo{
+    margin-right: 50%;
+    width: 7.5rem;
+    
+}
+
+.segundo{
+    margin: 2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px black;
+}
+
+.orientation{
+    margin: 2rem 5rem;
+    border: 3px solid white;
+    padding: 3rem 7rem;
+}
+
+.fieldset{
+    margin: 2rem;
+    font-weight: bold;
+    font-size: larger;
+    color: #dda06e;
+}
+
+.Preguntas_frecuentes{
+    max-width: 100vw;
+    border: 1px solid white;
+    padding: 2rem 5rem;
+    background-color: rgb(30, 29, 29);
+    color: whitesmoke;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: sans-serif;
+    box-shadow: 0rem 0 2rem black;
+}
 /* PRACTICAR:
+
+    1- DEFINIR PROPIEDAD A ETIQUETAS NORMAL, POR ID, POR CLASE
+        POR SUBCLASE, Y VARIOS POR SUBCLASE, 
+
+    2- PONER COLOR POR: HEXADECIMAL, RGB,HSL
+    3- PONER PADDING,BORDER, MARGIN
+    3 - #POSITION {} PAG CUADERNO
+    4- UTILIZAR MEDIDAS ABSOLUTAS Y RELATIVAS
+    5- LOS 4 TIPOS DE LINKS 
     6- LAS TABLAS (ademas de tr: nth-child(even){}
     7- CENTRAR UN DIV O LO QUE SEA
 */
@@ -87,8 +242,10 @@ nav{
 
     1- BACKGROUND-COLOR:
     2- OPACITY:
+    2.1- BACKGROUND REPEAT: NO REPEAT
+    2.2 BACKGROUND ATTACHEMENT
     3- BACKGROUND-IMAGE:url();
-    4- BACKGROUND-SIZE:cover;
+    4- BACKGROUND-SIZE:cover,contain;
     5- OVERFLOW: hidden,visible,scroll;
     6- TEXT-ALIGN: Center,left,right;
     7- TEXT-DECORATION: underline,overline,linetrough
@@ -102,4 +259,16 @@ nav{
     15- MAX-WIDTH: -px;
     16- FLOAT: right, left; 
     17- POSITION: fixed, sticky;
+    18 -box-sizing: border box;
 /*
+
+/* ETIQUETAS A PRACTICAR HMTL AVANZADO
+
+    1. <SELECT> <OPTION>
+    2. <INPUT> <DATALIST> <OPTION>
+    3. <FIELDSET><LEGEND>
+    4. <DETAILS> <SUMMARY>
+    5. <VIDEO> <AUDIO> <TRACK>
+    6. LAZY LOADING
+
+    
