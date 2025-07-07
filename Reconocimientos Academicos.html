@@ -8,26 +8,20 @@
     <meta name="description" content="Apartado donde se ve los meritos academicos conseguidos por mi">
     <meta name="keywords" content="Merito,Academico,Beca,Universidad,Ministerio de educacion, Promedio">
     <title>Reconocimientos Academicos</title>
-    <link rel="icon" href="Imagines e Iconos/diploma-de-graduacion.png">
-    <style>
-        table,th,td{
-            border: 1px solid black;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="EstilosRecAcademicos.css"/>
+    <link rel="icon" href="codificacion.png"/>
 </head>
 <body>
     <header id="INICIO"> <!--MENU PRINCIPAL E INTRODUCCION PAGINA -->
-        <img style="width: 700px; height: 400px;"  src="Imagines e Iconos/WhatsApp Image 2025-06-27 at 15.36.24_19d1cf38.jpg"/>
+        <img class="imagines" src="Imagines e Iconos/WhatsApp Image 2025-06-27 at 15.36.24_19d1cf38.jpg"/>
         <h1>RECONOCIMIENTOS ACADEMICOS</h1>
         <p>En este apartdo compartire todos los logros academicos logrados hasta la actualidad<br>
             Esto se mostrara segun una linea temporal de tiempo, en donde se podra ver los meritos academicos que mas resalto<br>
             segun su fecha, lugar donde me es concedido, logros academicos por los cuales consegui los meritos academicos, entre otros
         </p>
-        <ul>
+        <ul class="espacio_links">
             <li>
                 <a href="Index.html">Pagina principal</a>
-                
             </li>
             <li>
                 <a href="Hoja de Vida.html">Hoja de vida</a>
@@ -35,20 +29,18 @@
         </ul>
         <hr>
     </header>
-    <section> <!--PRIMERA BECA ACADEMICA-->
+    <section class="becas"> <!--PRIMERA BECA ACADEMICA-->
         <h2>GENERACION EXELENCIA</h2>
         <p> Otorgado por el <span style="font-weight: bold;"> Ministerio de Educacion Nacional</span> al obtener un gran puntaje en las pruebas saber 11. Un examen del Estado a nivel Nacional</p>
-        <img src="https://web.icetex.gov.co/documents/20122/239933/banner-generacion-e.jpg/7403dae4-3e29-93bb-dc61-cad45488720a?t=1628711277352"/><br>
-        <a href="https://web.icetex.gov.co/es/-/generacion-e-excelencia-1ra-convocatoria">Requisitos obtencion Beca Academica</a>
+        <img src="https://web.icetex.gov.co/documents/20122/239933/banner-generacion-e.jpg/7403dae4-3e29-93bb-dc61-cad45488720a?t=1628711277352"/><br><br>
+        <a href="https://web.icetex.gov.co/es/-/generacion-e-excelencia-1ra-convocatoria">Requisitos obtencion Beca Academica</a><br><br>
         <hr>
-    </section>
-    <section> <!--PRIMERA BECA ACADEMICA-->
         <h2>EXELENCIA ACADEMICA UNIVERSIDAD LIBRE</h2>
         <p> Otorgado por mi alma mater, la <span style="font-weight: bold;">Universidad Libre de Colombia</span> al poseer el mejor promedio academico en el programa de Ing de Sistemas en el segudno semestre, periodo 2022-1</p>
-        <img src="https://www.unilibre.edu.co/wp-content/uploads/2024/08/Ingenieria-de-Sistemas-1.webp"/><br>
+        <img src="https://www.unilibre.edu.co/wp-content/uploads/2024/08/Ingenieria-de-Sistemas-1.webp"/><br><br>
         <hr>
     </section>
-    <article>
+    <article class="movilidad">
         <h1>MOVILIDAD INTERNACIONAL</h1>
         <h3>UTPL ECUADOR</h3>
         <p> En el semestre 2024-2, en el mes de Octubre ingrese como estudiante internacional a la <span style="font-weight: bold;">Universidad Tecnica Particular de Loja</span> en donde curse 2 materias enfocadas a la programacion:<br>
@@ -59,7 +51,7 @@
             En este periodo academico, aprendi diversas tecnologias, algunas de ellas con mas detalle que otras<br>
             A continuacion se muestra detalladamente la Tecnologia y la profundidad del conocimiento:
         </p>
-        <table style="width: 500px;">
+        <table>
             <thead> 
                 <tr>
                     <th>TECNOLOGIA</th>
@@ -106,14 +98,14 @@
                     <td>18</td>
                 </tr>
             </tfoot>
-        </table>
-        <img src="Imagines e Iconos/UTPL.png"/>
-        <p>ESTO DEMUESTRA LA FASCINACION QUE TENGO POR CRECER PROFESIONALMENTE Y POR ADAPTARME A NUEVOS AMBIENTES DIVERSOS Y MULTICULTURALES</p>
+        </table><br>
+        <img loading="lazy" class="imagines" src="Imagines e Iconos/UTPL.png"/>
+        <p>ESTO DEMUESTRA LA FASCINACION QUE TENGO POR CRECER PROFESIONALMENTE Y POR ADAPTARME A NUEVOS AMBIENTES DIVERSOS Y MULTICULTURALES</p><br>
+        <a class="espacio" href="#INICIO">Volver al inico de la pagina</a>
+        <a class="espacio" href="mailto: ivancortes3710@gmail.com">Contactame</a><br><br>
     </article>
-    <a href="#INICIO">Volver al inico de la pagina</a>
-    <br>
-    <a href="mailto: ivancortes3710@gmail.com">Contactame</a>
-    <h4>LLENA ESTE FORMULARIO Y PODRAS CONTACTARME</h4>
+    <article class="contacto">
+    <h4>LLENA ESTE FORMULARIO Y PODRAS CONTACTARME</h4><br>
     <form method="post">
         <label>NOMBRE</label>
         <input id="NOMBRE" placeholder="Ingresa tu nombre aca"/> <br> <br>
@@ -123,9 +115,39 @@
         <input id="Empresa" placeholder="Escribe el nombre de empresa o freelancer"/> <br> <br>
         <label>EMAIL</label>
         <input id="APELLIDO" placeholder="Ingresa un email valido aca"/> <br> <br>
-        <textarea name="Motivo_contacto" cols="45"  rows="10" placeholder="Escribe tus razones para contactarme..."></textarea><br>
+        <textarea name="Motivo_contacto" cols="45"  rows="10" placeholder="Escribe tus razones para contactarme..."></textarea><br><br>
         <input type="submit"></input> 
     </form>
+    </article>
+    <section class="contacto">
+        <p class="context-text">El perfil deseado que buscas:</p>
+        <select class="inicio">
+            <option disabled selected hidden>Selecciona una opción...</option>
+            <option>Trabajo</option>
+            <option>Proyecto</option>
+            <option>Consulta</option>
+            <option>Otro</option>
+        </select>
+        <input list="idlist" placeholder="Selecciona Rol">
+        <datalist id="idlist">
+            <option value="Frontend">HTML,CSS,JS,REACT</option>
+            <option value="Backend">PYTHON,DJANGO,SQL,NoSQL,GIT</option>
+        </datalist>
+    </section>
+    <button type="submit">Entregar</button>
+    <article class="detalles">
+        <details>
+            <summary>Como refuerzo mi pensamiento analitico y resolucion de problemas</summary>
+            <p>Estas habilidades las utilizo diariamente, esto por medio del aprendizaje de otros idiomas y por medio de la teoria musical</p> 
+        </details>
+        <details>
+            <summary>Ver más logros académicos</summary>
+            <p>He sido el mejor promedio academico en mas de un semestre a lo largo de mi vida universitaria.</p>
+        </details>
+    </article><br>
+    <video class="video" controls poster="https://cms.usanmarcos.ac.cr/sites/default/files/styles/large/public/2024-08/que-son-los-lenguajes-de-programacion.png?itok=gV4DZw6r.png">
+        <source src="Efecto de video - Código Programación - DX-Studio (1080p, h264).mp4"/>
+    </video>
 </body>
 </html>
 
