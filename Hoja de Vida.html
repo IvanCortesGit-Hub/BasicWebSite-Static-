@@ -5,70 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de desarrollador web junior. Proyectos, contacto e información personal.">
     <title>Hoja de vida</title>
-    <style>
-        table,th,td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="Estilos.css"/>
 </head>
 <body>
     <header>
-        <h1>Hola! Soy IVAN SANTIAGO CORTES GUTIERREZ</h1>
-        <h2>Desarrollador Full-stack Junior</h2>
-        <nav>
+        <div class="Portada">
+            <h1 >PORTFOLIO IVAN SANTIAGO CORTES GUTIERREZ</h1>
+            <h2 style="color: #fca65f;">Desarrollador Full-stack Junior</h2>
+        </div>
+        <h2 class="subtitulos_navegacion">Visita otros apartados de mi portafolio</h2>
+        <nav class="paginas_externas">
             <ul>
                 <li>
                     <a href="Index.html">Sobre mi</a> <br>
+                </li>
+                <li>
                     <a href="Reconocimientos Academicos.html">Reconocimientos Academicos</a> <br>
                 </li>
             </ul>
         </nav>
-        <p>Navega por esta pagina:<br></p>
-        <nav>
+        <p class="subtitulos_navegacion">Navega por esta pagina:</p>
+        <nav class="paginas_externas">
             <ul>
                 <li>
-                    <a>Sobre mi</a> <br>
+                    <a class="navegacion">Sobre mi</a> <br>
                 </li>
                 <li>
-                    <a>Proyectos</a> <br>
+                    <a class="navegacion" >Proyectos</a> <br>
                 </li>
                 <li>
-                    <a>Contacto</a>
+                    <a class="navegacion">Contacto</a>
                 </li>
             </ul>
         </nav>
         </header>
-        <section>
-            <h2>Sobre mi</h2>
+        <h2 class="subtitulos">SOBRE MI</h2>
+        <section class="posts"> 
             <p>Comence a programar hace 5 anios, cuando termine mis estudios de bachillerato y estaba a punto de comenxar mi carrera universitaria<br>
             Comence a aprender Python y Java, hasta un nivel intermedio, aprendiendo los principios de los algoritmos, estructuras de datos y logica algoritmica<br>
             Todo esto de forma autonoma, dandome las herramientas necesarias para poder incursionar en este mundo del software.
             Estos aprendizajes fortelecieron en mi:<br>
             </p>
             <ul>
-                <li>Aprendizaje autonomo</li>
-                <li>Adaptabilidad a nuevos entornos</li>
-                <li>Amor a la programacion</li>
+                <li class="navegacion">Aprendizaje autonomo</li>
+                <li class="navegacion">Adaptabilidad a nuevos entornos</li>
+                <li class="navegacion">Amor a la programacion</li>
             </ul>
             <h4>PROCESO DE APRENDIZAJE AUTONOMO EN MIS INICIOS</h4>
-            <p>Al querer empezar en mi este bello mundo de la progrmacion, cree esta ruta de aprendizaje segun recomendaciones previas, estos pasos fueron: <br></p>
+            <p> Al querer empezar en mi este bello mundo de la progrmacion, cree esta ruta de aprendizaje segun recomendaciones previas, estos pasos fueron: <br></p>
             <ol>
-                <li>FUNDAMENTOS DE LOS ALGORITMOS Y LA PROGRMACION</li>
-                <li>SINTAXIS Y ESTRUCTURA DE LOS LENGUAJES DE PROGRAMACION</li>
-                <li>APRENDIZAJE DE LENGUAJES DE PROGRMACION COMO: C, C++</li>
-                <li>APRENDIZAJE DE LENGUAJES DE PROGRMACION COMO JAVA, PYTHON</li>
+                <li class="navegacion">FUNDAMENTOS DE LOS ALGORITMOS Y LA PROGRMACION</li>
+                <li class="navegacion">SINTAXIS Y ESTRUCTURA DE LOS LENGUAJES DE PROGRAMACION</li>
+                <li class="navegacion">APRENDIZAJE DE LENGUAJES DE PROGRMACION COMO: C, C++</li>
+                <li class="navegacion">APRENDIZAJE DE LENGUAJES DE PROGRMACION COMO JAVA, PYTHON</li>
             </ol>
             <p>Este proceso complmento satisfactoriamente mis inicios en mi carrera universitaria, facilitandome el aprendizaje continuo, sin tener una curva de aprendizaje muy marcada, dandome la facilidad de poder enfocarme en el estudio de las matematicas <br></p>
         </section>
-        <article>
-            <h2>Mi primer proyecto en la programacion</h2>
-            <p>Se enfoco en la creacion de un proyecto el cual tiene fucnion de registrar los gastos de viajeros hacia un lado turistico en diversas monedas, haciendo la conversion a una moneda especifica y dando el total gastado, mostrando el total de porcentaje restante <br></p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzTCrDIXzIBLY41ECZW7Ha7s1mmHBXqDXoA&s"/> <br>
+        <h2 class="subtitulos">Mi primer proyecto en la programacion</h2>
+        <article class="posts">
+            <p class="texto_primer_proyecto">Se enfoco en la creacion de un proyecto el cual tiene fucnion de registrar los gastos de viajeros hacia un lado turistico en diversas monedas, haciendo la conversion a una moneda especifica y dando el total gastado, mostrando el total de porcentaje restante <br></p>
+            <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzTCrDIXzIBLY41ECZW7Ha7s1mmHBXqDXoA&s"/> <br>
             <a target="_blank"  href="https://github.com/IvanCortesGit-Hub">Mira mis proyectos en Git-Hub</a>
         </article>
+        <h2 class="subtitulos">Tencologias que estoy aprendiendo</h2>
         <section>
-            <h2>Tencologias que estoy aprendiendo</h2>
-            <table style="width: 500px;">
+            <table class="tabla">
                 <thead>
                     <th>Tecnologia</th>
                     <th>Nivel</th>
@@ -86,30 +87,66 @@
                         <td>JAVASCRIPT</td>
                         <td>Explorando</td>
                     </tr>
-                </tbody>
-                <tfoot>
                     <tr>
                         <td>TECNOLOGIAS POR APRENDER</td>
                         <td>10</td>
                     </tr>
-                </tfoot>
+                </tbody>
             </table>
         </section>
-        <section> 
-            <h2>CONTACTAME</h2>
-            <form method="post">
-                <label for="Nombre">Nombre</label>
-                <input id="Nombre"placeholder="Ingresa tu nombre"/><br>
-                <label for="Correo ">Correo</label>
-                <input id="Correo"placeholder="Ingresa tu Correo Electronico"/><br>
-                <textarea cols="60px" rows="10px" placeholder=" Ingresa tu comentario aca" ></textarea><br>
-                <input type="submit"><br>
-            </form>
+        <section class="FaQ">
+            <p id="Texto_selector">ELIGE SI ERES PERSONA NATURAL O VIENES DE PARTE DE UNA EMPRESA</p>
+            <select class="mover"> 
+                <option value="NoSeleccionado">Elegir</option>
+                <option value="Tipo1">Primera Opcion</option>
+                <option value="Tipo2">Segunda Opcion</option>
+            </select>  
         </section>
+        <section class="segundo">
+            <p id="Texto_selector">ELIGE LA TECNOLOGIA</p>
+            <input list="frontend/backend"  placeholder="Elegir" class="moversegundo">
+            <datalist id="frontend/backend">
+                <option value="frontend">HTML,CSS,JAVASCRIPT,REACT</option>
+                <option value="backend">PYTHON,DJANGO,SQL,NoSQL</option>
+            </datalist>
+        </section>
+        <h2 class="subtitulos">CONTACTAME</h2>
+        <section class="contacto"> 
+            <form  method="post">
+                <fieldset class="fieldset">
+                    <legend>INFORMACION GENERAL</legend>
+                    <label for="Nombre">Nombre</label><br>
+                    <input id="Nombre"placeholder="Ingresa tu nombre"/><br><br>
+                    <label for="Correo ">Correo</label><br>
+                    <input id="Correo"placeholder="Ingresa tu Correo Electronico"/><br><br>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label id="Telefono">Telefono</label><br>
+                    <legend>METODO CONTACTO</legend>
+                    <input for="Telefono" placeholder="Telefono"/><br><br>
+                    <label>Escribe tu comentario</label><br><br>
+                    <textarea id="comentario_empresa" cols="60px" rows="10px" placeholder=" Ingresa tu comentario aca" ></textarea><br><br>
+                    <input type="submit"><br>
+                </fieldset>
+            </form>
+            <p> RECUERDA COLOCAR NOMBRE DE EMPRESA, OBJETIVO DE CONTACTO Y METODOS PARA YO PODERTE CONTACTAR</p>
+        </section>
+        <article class="Preguntas_frecuentes">
+            <details>
+                <summary>En cual area de tecnologia poseo mas dominio?</summary>
+                <p>En Backend, esta habiliadad la aprendi antes de Frontend</p>
+            </details>
+            <details>
+                <summary>Cuanto tiempo llevo practicando?</summary>
+                <p>Llevo terminadas 3 semanas, empezando la 4 el lunes</p>
+            </details>
+        </article>
 </body>
-<footer>
+<footer class="prueba">
     <p>© 2025 - IVAN SANTIAGO CORTES GUTIERREZ. Todos los derechos reservados.</p>
     <a target="_blank" href="https://github.com/IvanCortesGit-Hub">Visita mis proyectos en Git-Hub</a>
     <p>GRACIAS POR VISITAR MI PORTAFOLIO!!</p>
 </footer>
+    <video id="video" loop autoplay muted src="Efecto de video - Código Programación - DX-Studio (1080p, h264).mp4"></video>
+
 </html>
