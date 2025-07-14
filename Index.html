@@ -9,35 +9,40 @@
     <meta name="keywords" content="PROJECT,HTML,CSS,PYTHON,JAVASCRIPT,GIT,GITHUB,REACT,DJANGO,CV">
     <title>Mi primera pagina web</title>
     <link rel="icon" href="Imagines e Iconos/search_find_window_16723.png">
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="EstilosIndex.css"/>
 </head>
 <body>
-    <h1>Ivan Santiago Cortes Gutierrez</h1>
-    <header>
-        <h2>Resumen academico profesional</h2>
-            <ul>
-                <li>
-                    <a href="Hoja de Vida.html">Hoja de vida</a>
-                </li>
-                <li>
-                    <a href="Reconocimientos Academicos.html">Reconocimeintos Academicos</a>
-                </li>
-            </ul>
+    <header class="cabecera">
+    <h1 class="cabecera__titulo">IVAN SANTIAGO CORTES GUTIERREZ</h1>
+    <h2 class="cabecera__subtitulo">PROGRAMADOR FULL-STACK JUNIOR</h2>
     </header>
-    <header id="inicio"> <!--RESUMEN EN GENERAL-->
-        <h2>Perfil Profesional</h2>
-        <p>Estudiante de ultimo semestre de Ingenieria de Sistemas, desarrollador full-stack junior enfocado en back-end<br>
+    <nav class="navegacion">
+        <ul class="navegacion__lista">
+            <li class="navegacion__elemento">
+                <a class="navegacion_enlace" href="Hoja de Vida.html">Hoja de <br>vida</a>
+            </li>
+            <li class="navegacion__elemento">
+                <a class="navegacion_enlace" href="Reconocimientos Academicos.html">Reconocimientos <br>Academicos</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="perfil-profesional">
+        <h2 class="perfil-profesional__titulo">Perfil Profesional</h2>
+        <p class="perfil-profesional__parrafo">Estudiante de ultimo semestre de Ingenieria de Sistemas, desarrollador full-stack junior enfocado en back-end<br>
         He sido parte de proyectos enfocados en la creacion de plataformas moviles y web utilizando tecnologias como:<br><br>
         GIT, JAVASCRIPT, REACT, PYTHON, DJANGO, MySQL, POSTGREDB
         </p>
-        <img src="Imagines e Iconos/Facultad.jpeg"/>
-    </header>
+        <img class="perfil-profesional__imagen" src="Imagines e Iconos/Facultad.jpeg"/>
+        <p id="etiqueta-disponible-trabajar">DISPONIBLE PARA TRABAJAR</p>
+        <div class="tecnologias-proyectos">
+            <p class="tecnologias-proyectos__parrafo"> Lorem ipsum dolor sit, facilis iure ipsa non quam minus perferendis aut unde inventore mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias soluta blanditiis facere in assumenda, distinctio enim obcaecati vitae aliquid, laboriosam recusandae eos possimus porro praesentium expedita, iure accusantium rerum asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus cum labore molestias, ipsam id sed sapiente nesciunt distinctio maxime? Alias ipsam recusandae esse id nostrum! Numquam quam magni unde eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus nesciunt nihil doloremque facere! Dolor placeat, laudantium, maiores temporibus atque nostrum magnam et omnis earum eveniet rem aspernatur beatae! At!</p>
+        </div>
+        <div class="tecnologias-aprendiendo">
+            <p class="tecnologias-aprendiendo__parrafo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum repellat expedita, beatae impedit aspernatur aliquid amet, voluptas veritatis consequuntur facilis iure ipsa non quam minus perferendis aut unde inventore mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias soluta blanditiis facere in assumenda, distinctio enim obcaecati vitae aliquid, laboriosam recusandae eos possimus porro praesentium expedita, iure accusantium rerum asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus cum labore molestias, ipsam id sed sapiente nesciunt distinctio maxime? Alias ipsam recusandae esse id nostrum! Numquam quam magni unde eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus nesciunt nihil doloremque facere! Dolor placeat, laudantium, maiores temporibus atque nostrum magnam et omnis earum eveniet rem aspernatur beatae! At!</p>
+        </div>
+    </section>
     <hr>
-    <header><!--VIDA ACADEMICA-->
+    <section><!--VIDA ACADEMICA-->
         <h2>HISTORIA ACADEMICA</h2><br>
         <h3>Mi Universidad</h3>
         <p>Proximo graduado de la facultad de Ingenieria de la universidad Libre de Colombia, sede Bogota<br>
@@ -45,18 +50,18 @@
         </p>
         <a target="_blank" href="https://www.unilibre.edu.co/">PAGINA WEB DE MI ALAMA MATER</a> <br> <br>
         <img width="400" height="500" src="https://comunicacionesbogota.unilibre.edu.co/wp-content/uploads/2019/02/sede-bosque-10.jpg"/>
-    </header>
+    </section>
     <hr>
-    <header> <!--RECONOCIMIENTOS ACADEMICOS-->
-        <h2>RECONOCIMIENTOS ACADEMICOS EN MI VIDA ACADEMICA</h2>
-        <ul>
-            <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER 11</li>
-            <li>RECONOCIMIENTO MERITO ACADEMICO UNIVERSIDAD LIBRE</li>
-            <li>RECONOCIMIENTO ALTO PUNTAJE ICFES SABER PRO</li>
+    <section class="reconocimientos-academicos"> <!--RECONOCIMIENTOS ACADEMICOS-->
+        <h2 class="reconocimientos-academicos__titulo">RECONOCIMIENTOS ACADEMICOS EN MI VIDA ACADEMICA</h2>
+        <ul class="reconocimientos-academicos__lista">
+            <li class="reconocimientos-academicos__elemento">RECONOCIMIENTO ALTO PUNTAJE ICFES SABER 11</li>
+            <li class="reconocimientos-academicos__elemento">RECONOCIMIENTO MERITO ACADEMICO UNIVERSIDAD LIBRE</li>
+            <li class="reconocimientos-academicos__elemento">RECONOCIMIENTO ALTO PUNTAJE ICFES SABER PRO</li>
+            <img class="reconocimientos-academicos__imagen" src="https://freight.cargo.site/t/original/i/13077cdadae642a39c8cbf4bdb499eaefb240d06da50bc88afa73e684746e051/inside.jpg">
         </ul>
         <br>
-    </header>
-    <header> <!--ESTUDIOS REALIZADOS EN EL EXTRANJERO-->
+    <section> <!--ESTUDIOS REALIZADOS EN EL EXTRANJERO-->
         <h3>ESTUDIOS INTERNACIONALES</h3>
         <br>
         <p>Realice estudios de 2 materias de programcion (movil y web) en la Universidad Tecnica Particular de Loja, en Ecuador<br>
@@ -81,9 +86,9 @@
                 </ul>
             </li>
         </ol>
-    </header>
-    <div> <!--PARTE INDEPENDIENTE DONDE MUESTRO NOTAS DEL ULTIMO SEMESTRE-->
-        <table style="width: 500px;">
+    </section>
+    <article> <!--PARTE INDEPENDIENTE DONDE MUESTRO NOTAS DEL ULTIMO SEMESTRE-->
+        <table>
             <thead>
                 <tr>
                     <th>Materia</Th>
@@ -124,16 +129,16 @@
                 <td></td>
             </tfoot>
         </table>
-    </div>
-    <footer>  
-        <a href="#inicio">Regresar a inicio de pagina</a>
-        <form action="/formulario" method="POST"> 
-            <label for="Nombre">Nombre</label>
-            <input type="text"  id = "Nombre" name="Nombre" placeholder="Digita tu nombre aca"/>
-            <label for="Apellido">Apellido</label>
-            <input type="text"  id = "Apellido" name="Apellido" placeholder="Digita tu apellido aca"/><br> <br>
-            <textarea name="Comentario" cols="55" rows="10" id="Comentario" placeholder="Deja tu comentario aca"></textarea><br>
-            <label>Guardar cambios</label><input type="submit"></input>
+    </article>
+    <footer class="footer">  
+        <a class="footer__enlace" href="#inicio">Regresar a inicio de pagina</a>
+        <form class="formulario" action="/formulario" method="POST"> 
+            <label class="formulario__campo" for="Nombre">Nombre</label>
+            <input class="formulario__input" type="text"  id = "Nombre" name="Nombre" placeholder="Digita tu nombre aca"/>
+            <label class="formulario__campo" for="Apellido">Apellido</label>
+            <input class="formulario__input"type="text"  id = "Apellido" name="Apellido" placeholder="Digita tu apellido aca"/><br> <br>
+            <textarea class="formulario__textarea" name="Comentario" cols="55" rows="10" id="Comentario" placeholder="Deja tu comentario aca"></textarea><br>
+            <label class="formulario__campo">Guardar cambios</label><input type="submit"></input>
         </form>
     </footer>
 </body>
